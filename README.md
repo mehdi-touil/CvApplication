@@ -8,8 +8,7 @@ We used :
 -We used class components of react using states.
 ## Live Demo
 Here is the live demo: https://mehdi-touil.github.io/CvApplication/
-## Preview
 ### App Preview
-![preview](https://ibb.co/WtHZ57T)
+![preview]([https://ibb.co/WtHZ57T](https://i.ibb.co/QdJLQh5/cv.png))
 
 
