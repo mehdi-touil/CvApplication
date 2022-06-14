@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CvApplication/static/css/main.6b6c8f12.css",
+    "main.js": "/CvApplication/static/js/main.c73eca9c.js",
+    "static/media/image.png": "/CvApplication/static/media/image.e8ac51ee6eaf9d909c7f.png",
+    "static/media/eye.png": "/CvApplication/static/media/eye.f13a83b58622772ce12b.png",
+    "static/media/telephone.png": "/CvApplication/static/media/telephone.c959d854a99f2c020e87.png",
+    "static/media/github.png": "/CvApplication/static/media/github.cb878dccf56e08d5dfc2.png",
+    "static/media/pin.png": "/CvApplication/static/media/pin.82056140ce3605dfbf34.png",
+    "static/media/job.png": "/CvApplication/static/media/job.52e68788527a4b4c7a83.png",
+    "static/media/aboutme.png": "/CvApplication/static/media/aboutme.725a3adfee818c18ff2e.png",
+    "static/media/name.png": "/CvApplication/static/media/name.7a09e2b700994fb5ff78.png",
+    "static/media/del.png": "/CvApplication/static/media/del.e26a560be2fad066e5f1.png",
+    "static/media/email.png": "/CvApplication/static/media/email.a2f2146f929409405da0.png",
+    "static/media/plus.png": "/CvApplication/static/media/plus.159bec09788c2abaf062.png",
+    "index.html": "/CvApplication/index.html",
+    "main.6b6c8f12.css.map": "/CvApplication/static/css/main.6b6c8f12.css.map",
+    "main.c73eca9c.js.map": "/CvApplication/static/js/main.c73eca9c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b6c8f12.css",
+    "static/js/main.c73eca9c.js"
+  ]
+}
