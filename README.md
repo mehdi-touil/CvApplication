@@ -9,6 +9,7 @@ We used :
 ## Live Demo
 Here is the live demo: https://mehdi-touil.github.io/CvApplication/
 ### App Preview
-![preview]([https://ibb.co/WtHZ57T](https://i.ibb.co/QdJLQh5/cv.png))
+![preview]((https://i.ibb.co/QdJLQh5/cv.png))
+![alt text](http://url/to/img.png)
 
 
