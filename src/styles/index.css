@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap");
+
+#maincontainer,
+#root,
+html,
+body {
+ min-height: 100%; /* needed for container min-height */
+ background: gray;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ width: 100%;
+ position: relative;
+}
+.Pageheader {
+ position: relative;
+ background-color: black;
+ width: 100%;
+ height: 10vh;
+ font-family: "Sora", sans-serif;
+ font-size: 2.5rem;
+ color: whitesmoke;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin-bottom: 10px;
+}
+.Pageheader p {
+ font-size: calc(3vw + 5px);
+ margin-bottom: 0;
+ text-align: center;
+}
+
+#modechangecheckbox {
+ display: none;
+}
+#modechangecheckbox:checked + label::after {
+ right: 10px;
+}
+#modechangecheckbox:checked + label {
+ background-color: yellowgreen;
+}
+#modechange > label {
+ width: 100px;
+ height: 50px;
+ border-radius: 50px;
+ background-color: rgba(255, 174, 0, 0.564);
+ position: relative;
+}
+#modechange {
+ display: flex;
+ align-items: center;
+}
+#modechangecheckbox + label::after {
+ content: "";
+ position: absolute;
+ right: 50px;
+ width: 45px;
+ top: 2px;
+ height: 45px;
+ border-radius: 50%;
+ background-color: rgb(255, 255, 255);
+ transition: all 0.3s ease-in-out;
+}
+
+.mode {
+ width: 50%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.mode > * {
+ margin: 10px;
+ font-size: calc(3vw + 5px);
+}
+
+.formcontainer {
+ min-height: 200vh;
+ width: 60vw;
+ background-color: #253446;
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ color: white;
+}
+.cvcontainer {
+ position: relative;
+ width: 80vw;
+ background-color: rgb(229, 162, 74);
+ margin-top: auto;
+}
+.cvHeader {
+ width: 100%;
+ height: 30%;
+ background-color: white;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.Headertext {
+ font-family: "Sora", sans-serif;
+ text-align: center;
+}
+.name {
+ font-size: 3vw;
+}
+.job {
+ font-size: 2vw;
+}
+.imagecontainer img {
+ max-width: 100%;
+ height: auto;
+}
+.aboutmecontainer {
+ font-family: "Sora", sans-serif;
+ height: 30%;
+ width: 100%;
+ background-color: rgb(112, 108, 108);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid rgb(0, 0, 0);
+}
+.aboutmecontainer div {
+ display: flex;
+ align-items: center;
+}
+.aboutmecontainer div:nth-child(1) {
+ justify-content: flex-end;
+ text-transform: uppercase;
+ font-size: 4vw;
+ white-space: nowrap;
+ width: 30%;
+ margin-right: 20px;
+ border-bottom: 2px solid white;
+ font-weight: 700;
+ color: #000;
+}
+.aboutmecontainer div:nth-child(2) {
+ justify-content: center;
+ width: 80%;
+ padding: 20px;
+ color: white;
+ font-size: 2vw;
+}
+.skills_contacts_section,
+.workex_education_section {
+ width: 30%;
+ background-color: #241f25;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ font-family: "Sora", sans-serif;
+ padding: 10px;
+}
+.workex_education_section {
+ width: 70%;
+ background-color: white;
+ color: #292924;
+}
+.contactscontainer img {
+ max-width: 100%;
+ height: auto;
+}
+.contactstitle {
+ text-transform: uppercase;
+ border-bottom: 2px solid white;
+ font-size: 2vw;
+ font-weight: 900;
+}
+.contactscontainer {
+ width: 90%;
+}
+.contactsitem {
+ display: flex;
+ align-items: center;
+ font-size: calc(2vw +5px);
+}
+
+.info {
+ width: 80%;
+ display: flex;
+ justify-content: flex-start;
+ margin: 10px;
+ /* overflow-wrap: break-word; */
+ /* word-break: break-word; */
+}
+.contactsitem:nth-child(6),
+.contactsitem:nth-child(3) {
+ word-break: break-word;
+}
+.skillstitle {
+ text-transform: uppercase;
+ border-bottom: 2px solid white;
+ font-size: 2vw;
+ font-weight: 900;
+}
+.skillscontainer {
+ width: 90%;
+}
+/* .skillslist {
+ list-style-position: inside;
+} */
+
+input[type="text"] {
+ background: none;
+ outline: none;
+ width: 100%;
+ height: 100%;
+ border: none;
+}
+textarea:focus,
+input:focus,
+input:focus ~ div {
+ border: 2px solid #f8db57;
+ border-radius: 20px;
+}
+input,
+input::placeholder,
+textarea,
+[for="image"] {
+ color: white;
+ text-transform: uppercase;
+ font-size: 2vw;
+ font-family: "Sora", sans-serif;
+}
+input,
+textarea {
+ text-transform: capitalize;
+}
+.row-container {
+ display: flex;
+ align-items: center;
+ border: 2px solid #5d6c76;
+ margin: 5px;
+}
+.icon-container {
+ padding: 10px;
+ border-right: 2px solid #5d6c76;
+}
+.icon-container img {
+ max-width: 100%;
+ width: 3vw;
+}
+#image {
+ display: none;
+}
+[for="image"] {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+}
+textarea {
+ resize: none;
+ background: none;
+ outline: none;
+ width: 100%;
+ height: 100px;
+ border: none;
+ /* border-left: 2px solid #5d6c76; */
+}
+.textarea-container {
+ position: relative;
+ width: 100%;
+}
+[for="aboutme"] {
+ top: 0;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ color: #878f99;
+ text-transform: uppercase;
+ font-size: 2vw;
+ font-family: "Sora", sans-serif;
+ display: flex;
+ align-items: center;
+}
+textarea:valid + label {
+ z-index: -1;
+}
+.icon-container-aboutme img {
+ max-width: 100%;
+ width: 4vw;
+}
+.icon-container-aboutme {
+ border-right: 2px solid #5d6c76;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ padding: 5px 5px;
+}
+#submit {
+ background-color: #f8db57;
+ border-radius: 20px;
+ text-align: center;
+ color: #253446;
+}
+.skillseditor-container {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ max-height: 40%;
+ height: auto;
+}
+
+.addskillbar {
+ display: flex;
+ height: 50px;
+ width: 100%;
+ border: 2px solid gray;
+ margin: 10px 0px;
+ padding: 5px;
+ border-radius: 20px;
+}
+
+.skillrow {
+ display: flex;
+ align-items: center;
+ border: 2px solid gray;
+ border-radius: 20px;
+ margin: 5px;
+}
+.skillrow > input {
+ width: 100%;
+ padding: 5px;
+}
+
+.skillbartitle {
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 2vw;
+ font-family: "Sora", sans-serif;
+}
+.delicon {
+ width: 2.5vw;
+ height: 2.5vw;
+}
+.delicon:hover {
+ background-color: red;
+ border-radius: 50%;
+}
+#addbtn:hover {
+ background-color: rgb(0, 234, 255);
+ border-radius: 50%;
+ transform: scale(0.9);
+}
+
+.addskillbar input {
+ padding: 10px;
+}
+.cvmaincontent {
+ display: flex;
+}
+.workextitle {
+ font-family: "Sora", sans-serif;
+ font-size: 3vw;
+ font-weight: 800;
+ text-transform: uppercase;
+ margin: 20px;
+}
+.workexitem {
+ display: flex;
+}
+.from_to {
+ width: 20%;
+ color: #4b474b;
+ font-size: 1.5vw;
+ text-align: center;
+ font-weight: 900;
+}
+.to,
+.from {
+ margin-top: 5px;
+}
+.sepbar {
+ width: 10%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-end;
+}
+.circle {
+ /* width: 100%; */
+ height: 1.5vw;
+ width: 1.5vw;
+ border-radius: 50%;
+ border: 2px solid #4b474b;
+}
+.line {
+ height: 85%;
+ width: 2px;
+ background-color: #cfcfd0;
+}
+.extext {
+ width: 70%;
+ padding-left: 20px;
+}
+.exjob {
+ font-family: "Sora", sans-serif;
+ font-size: 2vw;
+ font-weight: 800;
+}
+.excompany,
+.exadr {
+ font-family: "Sora", sans-serif;
+ font-size: 3vmin;
+ font-weight: 500;
+}
+.exadr {
+ font-weight: 500;
+ font-size: 2.5vmin;
+}
+.exdescription {
+ padding: 20px 0px;
+ font-size: 1.3vw;
+}
+.addworkbox,
+.addedubox {
+ border: 1px solid khaki;
+}
+/*************************test*****/
+.addworkbox input,
+.addworkbox button,
+.workitem button,
+.workitem input,
+.addedubox input,
+.addedubox button,
+.eduitem button,
+.eduitem input {
+ border: 1px solid #cfcfd0;
+ border-radius: 20px;
+ padding: 10px;
+}
+.workitem button,
+.addworkbox button,
+.eduitem button,
+.addedubox button {
+ margin-top: 10px;
+}
+
+.workitem button:hover,
+.addworkbox button:hover,
+.eduitem button:hover,
+.addedubox button:hover {
+ transform: scale(1.05);
+}
+.addworkbox,
+.addedubox {
+ border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+}
+.workitem,
+.eduitem {
+ border: 1px solid #cfcfd0;
+ border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ margin: 5px 0px;
+ padding: 20px;
+}
+.worktitle,
+.edutitle {
+ font-family: "Sora", sans-serif;
+ font-size: 2.5vw;
+ text-transform: uppercase;
+ font-weight: 800;
+ text-align: center;
+ text-transform: uppercase;
+}
+.addworkbox button,
+.workitem button,
+.eduitem button,
+.addedubox button {
+ background-color: #f8db57;
+}
+.eduitem label,
+.addedubox label,
+.workitem label,
+.addworkbox label,
+.addworkbox button {
+ font-family: "Sora", sans-serif;
+ font-size: 2vw;
+ color: #cfcfd0;
+ font-weight: 800;
+}
+.addworkbox button,
+.workitem button,
+.addedubox button,
+.eduitem button {
+ color: #241f25;
+ font-size: 2vw;
+ text-transform: uppercase;
+}
+.educontainer {
+ margin-top: 10px;
+}
+.loadexample {
+ background-color: #706c6c;
+ display: flex;
+ justify-content: center;
+ padding: 10px;
+}
+.loadexample button {
+ background-color: #f8db57;
+ color: #000;
+ border: 1px solid khaki;
+ border-radius: 20px;
+ padding: 10px;
+ font-family: "Sora", sans-serif;
+ font-size: calc(1vw+12px);
+ font-weight: 800;
+ margin: 5px;
+}
+.loadexample button:hover {
+ transform: scale(1.05);
+}
+@media (max-width: 800px) {
+ .cvmaincontent {
+  flex-direction: column;
+ }
+ .skills_contacts_section {
+  width: 100%;
+ }
+ .workex_education_section {
+  width: 100%;
+ }
+ .formcontainer {
+  width: 90%;
+ }
+ .bigcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+ }
+ .skillslist li {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+ }
+}
+footer {
+ background-color: #060606;
+ color: white;
+ text-align: center;
+ font-family: "Sora", sans-serif;
+ font-size: calc(1vw+12px);
+ width: 100%;
+ padding: 5px;
+}
